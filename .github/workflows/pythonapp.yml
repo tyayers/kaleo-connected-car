@@ -1,0 +1,21 @@
+name: Python application
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Deploy to Apigee
+      run: |
+        python deploy.py -n Car-Data-API -u tyayers@google.com:Rushmore%12 -o emea-poc13 -e test -p car-data -d /api-proxy
