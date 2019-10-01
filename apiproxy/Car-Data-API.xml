@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="Car-Data-API">
+    <Basepaths>/car-data</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1569867341839</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>This API provides connected car data to consumers for value-added automotive services.
+</Description>
+    <DisplayName>Car-Data-API</DisplayName>
+    <LastModifiedAt>1569913275020</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:0c59921cba90b53cbf170f81378a06eae2a1c4855ae96dfb3a92c014d7515d807d06168b9ea8888e14a08368721e8a1bc99a7b206e9aab229077b93d4eaf69ff</ManifestVersion>
+    <Policies>
+        <Policy>AM-PathSuffixFalse</Policy>
+        <Policy>Add-Marker</Policy>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Assign-Message-2</Policy>
+        <Policy>remove-query-param-apikey</Policy>
+        <Policy>verify-api-key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
