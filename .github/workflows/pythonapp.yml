@@ -18,4 +18,4 @@ jobs:
         python-version: 2.7.16
     - name: Deploy to Apigee
       run: |
-        python deploy.py -n Car-Data-API -u tyayers@google.com:Rushmore%12 -o emea-poc13 -e test -p car-data -d .
+        python deploy.py -n Car-Data-API -u tyayers@google.com:Rushmore%12 -o emea-poc13 -e test -p car-data -d /apiproxy
